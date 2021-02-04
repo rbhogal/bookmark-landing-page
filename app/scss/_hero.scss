@@ -1,0 +1,21 @@
+.hero {
+position: relative;
+  &__image {
+    min-height: 60rem;
+    background-size: cover;
+  }
+
+  &__background-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 70rem;
+    height: 47rem;
+    background-color: $soft-blue;
+    border-radius: 20rem;
+  }
+
+ 
+}

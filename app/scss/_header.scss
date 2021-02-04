@@ -1,0 +1,50 @@
+@mixin font-styles {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 8.5rem;
+  @include font-styles();
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+
+    & li {
+      margin: 0;
+      padding: 0rem 3rem;
+    }
+
+    & a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &__btn-login {
+    border: solid $soft-red;
+    color: white;
+    background-color: $soft-red;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    @include font-styles();
+    margin-left: 1.2rem;
+    box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    text-shadow: 0rem 0rem 3rem rgb(77, 77, 77);
+    outline: none;
+    &:hover {
+      background-color: white;
+      color: $soft-red;
+      border: 0.01 rem solid $soft-red;
+    }
+  }
+}

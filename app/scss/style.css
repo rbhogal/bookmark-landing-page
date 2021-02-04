@@ -1,17 +1,120 @@
 html {
-  font-size: 100%;
+  font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Rubik', sans-serif;
+  padding: 0rem 22.0rem;
+  font-family: "Rubik", sans-serif;
+}
+
+/* // Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+      justify-content: space-between;
+  }
+
+  &-jc-c {
+      justify-content: center;
+  }
+
+  &-jc-fe {
+      justify-content: flex-end;
+  }
+
+  &-ai-c {
+      align-items: center;
+  }
+}
+ */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__links li {
+  margin: 0;
+  padding: 0rem 3rem;
+}
+
+.header__links a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__btn-login {
+  border: solid #fa5757;
+  color: white;
+  background-color: #fa5757;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-left: 1.2rem;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  text-shadow: 0rem 0rem 3rem #4d4d4d;
+  outline: none;
+}
+
+.header__btn-login:hover {
+  background-color: white;
+  color: #fa5757;
+  border: 0.01 rem solid #fa5757;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__image {
+  min-height: 60rem;
+  background-size: cover;
+}
+
+.hero__background-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 70rem;
+  height: 47rem;
+  background-color: #5368df;
+  border-radius: 20rem;
 }
 /*# sourceMappingURL=style.css.map */

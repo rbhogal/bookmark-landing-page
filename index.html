@@ -17,12 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="app/scss/style.css" />
+    <link rel="stylesheet" href="/app/scss/style.css" />
     <script src="/app/js/script.js"></script>
 
     <title>Frontend Mentor | Bookmark landing page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -34,16 +34,36 @@
     </style>
   </head>
   <body>
-    <nav>
-      <a href="#"><img src="/images/logo-bookmark.svg" alt="bookmark"></a>
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
-      <button>Login</button>
-    </nav>
-    A Simple Bookmark Manager A clean and simple interface to organize your
-    favorite websites. Open a new browser tab and see your sites load instantly.
-    Try it for free. Get it on Chrome Get it on Firefox Features Our aim is to
+    <header class="header">
+      <a href="#" class="header__logo"
+        ><img src="/images/logo-bookmark.svg" alt="bookmark"
+      /></a>
+      <nav>
+        <ul class="header__links">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn-login">Login</button>
+    </header>
+
+    <section class="hero">
+      <img class="hero__img" src="/images/illustration-hero.svg" alt="illustration-hero">
+      <div class="hero__background-shape"></div>
+      <div class="hero__text">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favorite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <a href="#">Get it on Chrome</a>
+        <a href="#">Get it on Firefox</a>
+      </div>
+    </section>
+
+    <!--  
+       Features Our aim is to
     make it quick and easy for you to access your favorite websites. Your
     bookmarks sync between your devices so you can access them on the go. Simple
     Bookmarking Speedy Searching Easy Sharing Bookmark in one click Organize
@@ -60,45 +80,46 @@
     version 46 Add & Install Extension Frequently Asked Questions Here are some
     of our FAQs. If you have any other questions you’d like answered please feel
     free to email us.
+-->
 
     <!-- Question 1 -->
-    What is Bookmark?
-
+    <!-- What is Bookmark? -->
     <!-- Answer 1 -->
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
     justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
-    mattis.
+    mattis. -->
 
     <!-- Question 2 -->
-    How can I request a new browser?
+    <!-- How can I request a new browser? -->
 
     <!-- Answer 2 -->
-    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+    <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
     ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
     convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
     imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
-    massa, ultricies non ligula. Suspendisse imperdiet.
+    massa, ultricies non ligula. Suspendisse imperdiet. -->
 
     <!-- Question 3 -->
-    Is there a mobile app?
+    <!-- Is there a mobile app? -->
 
     <!-- Answer 3 -->
-    Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
+    <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
     dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
-    mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.
+    mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum. -->
 
     <!-- Question 4 -->
-    What about other Chromium browsers?
+    <!-- What about other Chromium browsers? -->
 
     <!-- Answer 4 -->
+    <!-- 
     Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
     euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut
     velit. More Info 35,000+ already joined Stay up-to-date with what we’re
-    doing Contact Us Features Pricing Contact
+    doing Contact Us Features Pricing Contact -->
 
     <footer>
       <p class="attribution">
-        Challenge by
+        <!-- Challenge by -->
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
