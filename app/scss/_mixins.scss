@@ -1,0 +1,17 @@
+@mixin font-styles {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: inherit;
+}
+
+@mixin btn($font-color, $background-color) {
+  color: $font-color;
+  background-color: $background-color;
+  font-size: 1.8rem;
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  font-family: inherit;
+  box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}

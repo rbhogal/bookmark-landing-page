@@ -1,12 +1,30 @@
 .hero {
-position: relative;
-  &__image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 75rem;
+
+  &__text {
+    grid-area: 1 / 1 / -1 / 2;
+    align-self: center;
+
+    &__subtext {
+      width: 50.0rem;
+      height: 10rem;
+      margin: 0;
+    }
+  }
+
+  &__img {
     min-height: 60rem;
     background-size: cover;
+    grid-area: 1 / 2 / -1 / -1;
+    align-self: center;
+    justify-self: end;
   }
 
   &__background-shape {
-    position: absolute;
+    display: none;
     top: 0;
     right: 0;
     bottom: 0;
@@ -15,7 +33,23 @@ position: relative;
     height: 47rem;
     background-color: $soft-blue;
     border-radius: 20rem;
+    grid-area: 1 / 2 / -1 / -1;
   }
 
- 
+  &__btn--chrome {
+    @include btn(white, $soft-blue);
+  }
+
+  &__btn--firefox {
+    @include btn(dimgrey, whitesmoke);
+  }
+
+  & button {
+    text-decoration: none;
+    padding-right: 3.3rem;
+    padding-left: 3.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+  }
 }

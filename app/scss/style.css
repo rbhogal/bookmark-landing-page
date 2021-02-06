@@ -13,8 +13,22 @@ html {
 
 body {
   margin: 0;
-  padding: 0rem 22.0rem;
+  padding-left: 22rem;
+  padding-right: 8.0rem;
   font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.3rem;
+}
+
+p {
+  color: #9194a1;
+  font-size: 1.8rem;
 }
 
 /* // Flexbox
@@ -52,6 +66,12 @@ body {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  font-family: inherit;
+}
+
+.header img {
+  height: 3.5rem;
+  width: 20rem;
 }
 
 .header__logo {
@@ -84,9 +104,10 @@ body {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin-left: 1.2rem;
+  font-family: inherit;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-left: 1.2rem;
   text-shadow: 0rem 0rem 3rem #4d4d4d;
   outline: none;
 }
@@ -98,16 +119,43 @@ body {
 }
 
 .hero {
-  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  height: 75rem;
 }
 
-.hero__image {
+.hero__text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / -1 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero__text__subtext {
+  width: 50.0rem;
+  height: 10rem;
+  margin: 0;
+}
+
+.hero__img {
   min-height: 60rem;
   background-size: cover;
+  grid-area: 1 / 2 / -1 / -1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .hero__background-shape {
-  position: absolute;
+  display: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -116,5 +164,48 @@ body {
   height: 47rem;
   background-color: #5368df;
   border-radius: 20rem;
+  grid-area: 1 / 2 / -1 / -1;
+}
+
+.hero__btn--chrome {
+  color: white;
+  background-color: #5368df;
+  font-size: 1.8rem;
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  font-family: inherit;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.hero__btn--firefox {
+  color: dimgrey;
+  background-color: whitesmoke;
+  font-size: 1.8rem;
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  font-family: inherit;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.hero button {
+  text-decoration: none;
+  padding-right: 3.3rem;
+  padding-left: 3.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.features h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

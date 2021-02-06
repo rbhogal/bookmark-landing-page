@@ -1,8 +1,4 @@
-@mixin font-styles {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-}
+@import "mixins";
 
 .header {
   display: flex;
@@ -10,6 +6,11 @@
   align-items: center;
   padding-top: 8.5rem;
   @include font-styles();
+
+  img {
+    height: 3.5rem;
+    width: 20rem;
+  }
 
   &__logo {
     margin-right: auto;
@@ -37,8 +38,8 @@
     padding: 1rem 3rem;
     border-radius: 0.5rem;
     @include font-styles();
-    margin-left: 1.2rem;
     box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-left: 1.2rem;
     text-shadow: 0rem 0rem 3rem rgb(77, 77, 77);
     outline: none;
     &:hover {
