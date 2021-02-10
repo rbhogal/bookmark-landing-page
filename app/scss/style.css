@@ -13,22 +13,23 @@ html {
 
 body {
   margin: 0;
-  padding-left: 22rem;
-  padding-right: 8.0rem;
+  padding: 0;
   font-family: "Rubik", sans-serif;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6.4rem;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 3.3rem;
+  font-weight: 500;
 }
 
 p {
   color: #9194a1;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 /* // Flexbox
@@ -63,6 +64,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 8.5rem;
+  padding-left: 22.8rem;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -100,6 +102,7 @@ p {
   color: white;
   background-color: #fa5757;
   padding: 1rem 3rem;
+  margin-right: 14rem;
   border-radius: 0.5rem;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -126,6 +129,7 @@ p {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   height: 75rem;
+  padding-left: 22.0rem;
 }
 
 .hero__text {
@@ -138,8 +142,8 @@ p {
 }
 
 .hero__text__subtext {
-  width: 50.0rem;
-  height: 10rem;
+  width: 64rem;
+  height: 14.5rem;
   margin: 0;
 }
 
@@ -150,20 +154,21 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 .hero__background-shape {
-  display: none;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 70rem;
+  margin-top: 20rem;
+  margin-left: 24rem;
+  width: 72rem;
   height: 47rem;
   background-color: #5368df;
-  border-radius: 20rem;
+  border-radius: 20rem 0 0 20rem;
   grid-area: 1 / 2 / -1 / -1;
 }
 
@@ -189,6 +194,7 @@ p {
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
+  margin-left: 2rem;
 }
 
 .hero button {
@@ -201,11 +207,59 @@ p {
 }
 
 .features h2 {
+  text-align: center;
+}
+
+.features__subtext {
+  text-align: center;
+  width: 65rem;
+  margin: 0 auto;
+  padding-bottom: 6rem;
+}
+
+.features__tabs {
+  width: 97.5rem;
+  height: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
+}
+
+.features__tabs button {
+  width: 100%;
+  height: 100%;
+  font-size: 2.2rem;
+  color: #9194a1;
+  background-color: white;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  outline: none;
+}
+
+.features__tabs__divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features__tabs__divs div {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 32.5rem;
+  height: 0.5rem;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  background-color: #fa5757;
 }
 /*# sourceMappingURL=style.css.map */

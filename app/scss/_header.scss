@@ -5,6 +5,7 @@
   justify-content: flex-end;
   align-items: center;
   padding-top: 8.5rem;
+  padding-left: 22.8rem;
   @include font-styles();
 
   img {
@@ -36,6 +37,7 @@
     color: white;
     background-color: $soft-red;
     padding: 1rem 3rem;
+    margin-right: 14rem;
     border-radius: 0.5rem;
     @include font-styles();
     box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);

@@ -17,22 +17,25 @@ html {
 
 body {
   margin: 0;
-  padding-left: 22rem;
-  padding-right: 8.0rem;
+  padding: 0;
+  // padding-left: 22rem;
+  // padding-right: 8.0rem;
   font-family: "Rubik", sans-serif;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 6.4rem; 
+  font-weight: 500;
 }
 
 h2 {
   font-size: 3.3rem;
+  font-weight: 500;
 }
 
 p {
   color: $grayish-blue;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 /* // Flexbox
