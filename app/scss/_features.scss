@@ -1,11 +1,11 @@
 .features {
-  & h2 {
+  &__heading {
     text-align: center;
   }
 
   &__subtext {
     text-align: center;
-    width: 65rem;
+    width: 78rem;
     margin: 0 auto;
     padding-bottom: 6rem;
   }
@@ -32,21 +32,108 @@
       border: none;
       outline: none;
     }
-  }
 
-  &__tabs__divs {
-    display: flex;
-    justify-content: center;
+    &__divs {
+      display: flex;
+      justify-content: center;
 
-    & div {
+      & div {
+        align-self: center;
+        width: 32.5rem;
+        height: 0.5rem;
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &__grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      & button {
+        @include btn(white, $soft-blue);
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        padding: 2rem 3rem;
+      }
+    }
+
+    &__tab-1__img {
+      grid-area: 1 / 1 / -1 / 2;
+      justify-content: center;
       align-self: center;
-      width: 32.5rem;
-      height: 0.5rem;
-      box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+      padding-left: 25%;
+      width: 100%;
+    }
+
+    &__tab-2__img {
+      grid-area: 1 / 1 / -1 / 2;
+      justify-content: center;
+      align-self: center;
+      padding-left: 32.5rem;
+      width: 100%;
+      padding-top: 9.5rem;
+    }
+
+    &__tab-3__img {
+      grid-area: 1 / 1 / -1 / 2;
+      justify-content: center;
+      align-self: center;
+      padding-left: 32.5rem;
+      width: 100%;
+    }
+
+    &__background-shape {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 85rem;
+      height: 47rem;
+      background-color: $soft-blue;
+      border-radius: 0 30rem 20rem 0;
+      grid-area: 1 / 1 / -1 / 2;
+      margin-top: 20rem;
+    }
+
+    &__tab-1__text {
+      grid-area: 1 / 2 / -1 / 3;
+      justify-content: start;
+      padding-top: 16.3rem;
+      padding-left: 16.5rem;
+
+      &--subtext {
+        width: 65rem;
+        height: 10rem;
+      }
+    }
+
+    &__tab-2__text {
+      grid-area: 1 / 2 / -1 / 3;
+      justify-content: start;
+      padding-top: 16.3rem;
+      padding-left: 16.5rem;
+
+      &--subtext {
+        width: 65rem;
+        height: 10rem;
+      }
+    }
+
+    &__tab-3__text {
+      grid-area: 1 / 2 / -1 / 3;
+      justify-content: start;
+      padding-top: 16.3rem;
+      padding-left: 16.5rem;
+
+      &--subtext {
+        width: 65rem;
+        height: 10rem;
+      }
     }
   }
 }
 
 .active {
-    background-color: $soft-red;
-  }
+  background-color: $soft-red;
+}
