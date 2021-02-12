@@ -5,7 +5,7 @@
 
   &__subtext {
     text-align: center;
-    width: 78rem;
+    width: 72rem;
     margin: 0 auto;
     padding-bottom: 6rem;
   }
@@ -49,6 +49,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
+
+      & p {
+        font-size: 2.7rem;
+      }
+
       & button {
         @include btn(white, $soft-blue);
         border: none;
@@ -115,7 +120,7 @@
       padding-left: 16.5rem;
 
       &--subtext {
-        width: 65rem;
+        width: 57.5rem;
         height: 10rem;
       }
     }

@@ -1,4 +1,7 @@
 .extensions {
+  width: 100vw;
+  height: 100vh;
+
   &__header {
     text-align: center;
     margin-top: 21.5rem;
@@ -6,7 +9,7 @@
 
   &__subtext {
     text-align: center;
-    width: 85rem;
+    width: 72rem;
     margin: 0 auto;
   }
 
@@ -15,30 +18,37 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 37.5rem;
-    height: auto;
+    width: 34rem;
+    height: 53rem;
     border-radius: 2rem;
     box-shadow: 0rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 6.5rem;
+    margin-bottom: 14.5rem;
 
     &--grid-container {
       display: grid;
       grid-template-rows: 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      width: 100%;
+      grid-template-columns: repeat(5, 1fr);
+      width: 100vw;
+      height: 81.5rem;
     }
 
     &__chrome {
       grid-row: 1 / -1;
-      grid-column: 1 / 2;
-      margin: 0;
+      grid-column: 2 / 3;
+      justify-self: end;
     }
 
-    // &__firefox{
-
-    // }
-    // &__opera {
-
-    // }
+    &__firefox{
+      grid-row: 1 / -1;
+      grid-column: 3 / 4; 
+      align-self: center;
+    }
+    &__opera {
+      grid-row: 1 / -1;
+      grid-column: 4 / 5;
+      align-self: end;
+    }
 
     &__img--browser {
       padding-top: 8.5rem;
@@ -69,8 +79,7 @@
       font-size: 1.6rem;
       padding-left: 4.5rem;
       padding-right: 4.5rem;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+      margin: 3.5rem;
     }
   }
 }

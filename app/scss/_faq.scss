@@ -1,0 +1,39 @@
+.faq {
+  width: 100%;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__subtext {
+    text-align: center;
+    margin: 0 auto;
+    width: 66rem;
+  }
+
+  &__accordion {
+    margin: 0 auto;
+    max-width: 72rem;
+
+    & h2 {
+      font-weight: 400;
+      font-size: 2.5rem;
+      display: block;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    & p {
+      font-size: 2rem;
+      line-height: 3rem;
+      overflow: hidden;
+    }
+
+    & ul {
+      list-style: none;
+      perspective: 900;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
