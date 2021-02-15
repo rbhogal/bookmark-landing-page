@@ -20,10 +20,16 @@
 
     & h2 {
       font-weight: 400;
-      font-size: 2.5rem;
+      font-size: 2rem;
       display: block;
       cursor: pointer;
       user-select: none;
+      // position: relative;
+      // z-index: 3;
+
+      &:hover {
+        color: $soft-red;
+      }
     }
 
     & p {
@@ -51,7 +57,7 @@
           width: 100%;
           height: 100%;
           opacity: 0;
-          // z-index: 1;
+          z-index: 1;
 
           &:checked {
             & ~ p {
@@ -61,6 +67,7 @@
               transform: translate(0, 50%);
             }
           }
+
         }
       }
     }

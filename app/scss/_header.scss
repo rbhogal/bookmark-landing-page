@@ -29,6 +29,10 @@
     & a {
       text-decoration: none;
       color: black;
+
+      &:hover {
+        color: $soft-red;
+      }
     }
   }
 
@@ -44,6 +48,8 @@
     margin-left: 1.2rem;
     text-shadow: 0rem 0rem 3rem rgb(77, 77, 77);
     outline: none;
+    cursor: pointer;
+
     &:hover {
       background-color: white;
       color: $soft-red;

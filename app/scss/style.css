@@ -97,6 +97,10 @@ p {
   color: black;
 }
 
+.header__links a:hover {
+  color: #fa5757;
+}
+
 .header__btn-login {
   border: solid #fa5757;
   color: white;
@@ -113,6 +117,7 @@ p {
   margin-left: 1.2rem;
   text-shadow: 0rem 0rem 3rem #4d4d4d;
   outline: none;
+  cursor: pointer;
 }
 
 .header__btn-login:hover {
@@ -542,13 +547,17 @@ p {
 
 .faq__accordion h2 {
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: block;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.faq__accordion h2:hover {
+  color: #fa5757;
 }
 
 .faq__accordion p {
@@ -578,6 +587,7 @@ p {
   width: 100%;
   height: 100%;
   opacity: 0;
+  z-index: 1;
 }
 
 .faq__accordion ul li input[type="checkbox"]:checked ~ p {
