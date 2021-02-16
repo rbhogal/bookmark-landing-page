@@ -12,62 +12,50 @@
   }
 
   &__accordion {
+    max-width: 72.5rem;
     margin: 0 auto;
-    max-width: 72rem;
-    // display: inline-block;
-    // overflow-y: scroll;
-    position: relative;
+    padding-top: 8rem;
+    padding-left: 0;
+    list-style: none;
 
-    & h2 {
-      font-weight: 400;
-      font-size: 2rem;
-      display: block;
-      cursor: pointer;
-      user-select: none;
-      // position: relative;
-      // z-index: 3;
+    &__item {
+      border-top: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
 
-      &:hover {
-        color: $soft-red;
-      }
-    }
-
-    & p {
-      font-size: 2rem;
-      line-height: 3rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    & ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      padding-top: 8rem;
-
-      & li {
+      &__header {
+        font-weight: 400;
+        font-size: 2.4rem;
+        padding: 1rem 3rem 0.6rem 0;
         position: relative;
-        padding: 0;
-        margin: 0;
-        border-top: 1px solid lightgrey;
+        cursor: pointer;
+        user-select: none;
 
-        & input[type="checkbox"] {
+        &:hover {
+          color: $soft-red;
+        }
+
+        &::after {
+          content: url(/images/icon-arrow.svg);
+          width: 2.4rem;
           position: absolute;
-          cursor: pointer;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          z-index: 1;
+          right: 3rem;
+          transition: transform 0.2s ease-in-out;
+        }
 
-          &:checked {
-            & ~ p {
-              margin-top: 0;
-              max-height: 0;
-              opacity: 0;
-              transform: translate(0, 50%);
-            }
-          }
+        &.active::after {
+          transform: rotate(180deg);
+        }
+      }
 
+      &__body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        &--content {
+          padding: 0.5rem 0;
+          line-height: 4.9rem;
+          font-weight: 400;
         }
       }
     }

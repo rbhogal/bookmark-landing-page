@@ -403,7 +403,7 @@ p {
   height: 10rem;
 }
 
-.active {
+.active-tab {
   background-color: #fa5757;
 }
 
@@ -540,15 +540,23 @@ p {
 }
 
 .faq__accordion {
+  max-width: 72.5rem;
   margin: 0 auto;
-  max-width: 72rem;
-  position: relative;
+  padding-top: 8rem;
+  padding-left: 0;
+  list-style: none;
 }
 
-.faq__accordion h2 {
+.faq__accordion__item {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.faq__accordion__item__header {
   font-weight: 400;
-  font-size: 2rem;
-  display: block;
+  font-size: 2.4rem;
+  padding: 1rem 3rem 0.6rem 0;
+  position: relative;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -556,45 +564,36 @@ p {
           user-select: none;
 }
 
-.faq__accordion h2:hover {
+.faq__accordion__item__header:hover {
   color: #fa5757;
 }
 
-.faq__accordion p {
-  font-size: 2rem;
-  line-height: 3rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.faq__accordion ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-top: 8rem;
-}
-
-.faq__accordion ul li {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid lightgrey;
-}
-
-.faq__accordion ul li input[type="checkbox"] {
+.faq__accordion__item__header::after {
+  content: url(/images/icon-arrow.svg);
+  width: 2.4rem;
   position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
+  right: 3rem;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-.faq__accordion ul li input[type="checkbox"]:checked ~ p {
-  margin-top: 0;
+.faq__accordion__item__header.active::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq__accordion__item__body {
   max-height: 0;
-  opacity: 0;
-  -webkit-transform: translate(0, 50%);
-          transform: translate(0, 50%);
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq__accordion__item__body--content {
+  padding: 0.5rem 0;
+  line-height: 4.9rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

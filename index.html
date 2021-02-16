@@ -18,7 +18,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/app/scss/style.css" />
-    <script src="/app/js/script.js"></script>
 
     <title>Frontend Mentor | Bookmark landing page</title>
 
@@ -75,7 +74,7 @@
       </p>
 
       <div class="features__tabs">
-        <button class="features__tabs__tab--1 active">
+        <button class="features__tabs__tab--1 active-tab">
           Simple Bookmarking
         </button>
         <button class="features__tabs__tab--2">Speedy Searching</button>
@@ -190,23 +189,24 @@
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </p>
-      <div class="faq__accordion">
-        <ul>
-          <li>
-            <input type="checkbox" checked />
-            <i></i>
-            <h2 class="faq__accordion__question">What is Bookmark?</h2>
-            <p>
+
+      <ul class="faq__accordion">
+        <li class="faq__accordion__item">
+          <h2 class="faq__accordion__item__header">What is Bookmark?</h2>
+          <div class="faq__accordion__item__body">
+            <p class="faq__accordion__item__body--content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum
               quis quam ornare mattis.
             </p>
-          </li>
-          <li>
-            <input type="checkbox" checked />
-            <i></i>
-            <h2 class="faq__accordion__question">How can I request a new browser?</h2>
-            <p>
+          </div>
+        </li>
+        <li class="faq__accordion__item">
+          <h2 class="faq__accordion__item__header">
+            How can I request a new browser?
+          </h2>
+          <div class="faq__accordion__item__body">
+            <p class="faq__accordion__item__body--content">
               Vivamus luctus eros aliquet convallis ultricies. Mauris augue
               massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus
               eros aliquet convallis ultricies. Mauris augue massa, ultricies
@@ -214,30 +214,32 @@
               convallis ultricies. Mauris augue massa, ultricies non ligula.
               Suspendisse imperdiet.
             </p>
-          </li>
-          <li>
-            <input type="checkbox" checked />
-            <i></i>
-            <h2 class="faq__accordion__question">Is there a mobile app?</h2>
-            <p>
+          </div>
+        </li>
+        <li class="faq__accordion__item">
+          <h2 class="faq__accordion__item__header">Is there a mobile app?</h2>
+          <div class="faq__accordion__item__body">
+            <p class="faq__accordion__item__body--content">
               Sed consectetur quam id neque fermentum accumsan. Praesent luctus
               vestibulum dolor, ut condimentum urna vulputate eget. Cras in
               ligula quis est pharetra mattis sit amet pharetra purus. Sed
               sollicitudin ex et ultricies bibendum.
             </p>
-          </li>
-          <li>
-            <input type="checkbox" checked />
-            <i></i>
-            <h2 class="faq__accordion__question">What about other Chromium browsers?</h2>
-            <p>
+          </div>
+        </li>
+        <li class="faq__accordion__item">
+          <h2 class="faq__accordion__item__header">
+            What about other Chromium browsers?
+          </h2>
+          <div class="faq__accordion__item__body">
+            <p class="faq__accordion__item__body--content">
               Integer condimentum ipsum id imperdiet finibus. Vivamus in
               placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida
               pellentesque non ut velit.
             </p>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!-- Question 1 -->
@@ -272,6 +274,7 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
+      <script src="/app/js/script.js"></script>
     </footer>
   </body>
 </html>
