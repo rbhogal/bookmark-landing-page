@@ -1,0 +1,128 @@
+.footer {
+  background-color: $soft-blue;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__subtext {
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-top: 9.5rem;
+    margin-bottom: 0;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__header {
+    color: white;
+    text-align: center;
+    width: 54.5rem;
+    font-size: 4.2rem;
+    margin: 6rem 0;
+  }
+
+  &__input__email {
+    color: black;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: inherit;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    border: none;
+    padding-left: 2.8rem;
+    margin-right: 2rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba(145, 148, 161, 0.5);
+    }
+
+    &:input:invalid {
+      content: "wrong";
+    }
+  }
+
+  &__input__submit {
+    @include btn(white, $soft-red);
+    outline: none;
+    border: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  &__nav {
+    display: flex;
+    background-color: #242946;
+    width: 100%;
+    height: 12rem;
+    margin: 10rem;
+
+    &__links {
+      list-style: none;
+      display: flex;
+      @include font-styles;
+      align-items: center;
+
+      & a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          color: $soft-red;
+        }
+      }
+
+      & li {
+        margin: 0;
+        padding: 0rem 3rem;
+      }
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      padding-left: 22rem;
+    }
+
+    &__socials-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    &__socials {
+      &.twitter {
+        padding-right: 22rem;
+      }
+
+      &.facebook {
+        padding: 0 5rem;
+      }
+    }
+
+    &__facebook:hover {
+      fill: $soft-red;
+      cursor: pointer;
+    }
+
+    &__twitter--path {
+      &:hover {
+        fill: $soft-red;
+        cursor: pointer;
+      }
+    }
+  }
+}

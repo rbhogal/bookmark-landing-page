@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  font-size: 6.4rem; 
+  font-size: 6.4rem;
   font-weight: 500;
 }
 
@@ -37,25 +37,3 @@ p {
   color: $grayish-blue;
   font-size: 2.2rem;
 }
-
-/* // Flexbox
-.flex {
-  display: flex;
-
-  &-jc-sb {
-      justify-content: space-between;
-  }
-
-  &-jc-c {
-      justify-content: center;
-  }
-
-  &-jc-fe {
-      justify-content: flex-end;
-  }
-
-  &-ai-c {
-      align-items: center;
-  }
-}
- */

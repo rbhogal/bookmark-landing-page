@@ -32,27 +32,6 @@ p {
   font-size: 2.2rem;
 }
 
-/* // Flexbox
-.flex {
-  display: flex;
-
-  &-jc-sb {
-      justify-content: space-between;
-  }
-
-  &-jc-c {
-      justify-content: center;
-  }
-
-  &-jc-fe {
-      justify-content: flex-end;
-  }
-
-  &-ai-c {
-      align-items: center;
-  }
-}
- */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,14 +506,10 @@ p {
 
 .faq {
   width: 100%;
-}
-
-.faq__header {
   text-align: center;
 }
 
 .faq__subtext {
-  text-align: center;
   margin: 0 auto;
   width: 66rem;
 }
@@ -545,6 +520,7 @@ p {
   padding-top: 8rem;
   padding-left: 0;
   list-style: none;
+  text-align: left;
 }
 
 .faq__accordion__item {
@@ -595,5 +571,191 @@ p {
   padding: 0.5rem 0;
   line-height: 4.9rem;
   font-weight: 400;
+}
+
+.faq button {
+  color: white;
+  background-color: #5368df;
+  font-size: 1.8rem;
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  font-family: inherit;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 2rem 3rem;
+  margin-top: 7.5rem;
+  margin-bottom: 20rem;
+}
+
+.footer {
+  background-color: #5368df;
+  width: 100%;
+  height: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__subtext {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-top: 9.5rem;
+  margin-bottom: 0;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__header {
+  color: white;
+  text-align: center;
+  width: 54.5rem;
+  font-size: 4.2rem;
+  margin: 6rem 0;
+}
+
+.footer__input__email {
+  color: black;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-family: inherit;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  border: none;
+  padding-left: 2.8rem;
+  margin-right: 2rem;
+}
+
+.footer__input__email:focus {
+  outline: none;
+}
+
+.footer__input__email::-webkit-input-placeholder {
+  color: rgba(145, 148, 161, 0.5);
+}
+
+.footer__input__email:input:invalid {
+  content: "wrong";
+}
+
+.footer__input__submit {
+  color: white;
+  background-color: #fa5757;
+  font-size: 1.8rem;
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  font-family: inherit;
+  -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #242946;
+  width: 100%;
+  height: 12rem;
+  margin: 10rem;
+}
+
+.footer__nav__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav__links a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__nav__links a:hover {
+  color: #fa5757;
+}
+
+.footer__nav__links li {
+  margin: 0;
+  padding: 0rem 3rem;
+}
+
+.footer__nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 22rem;
+}
+
+.footer__nav__socials-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__nav__socials.twitter {
+  padding-right: 22rem;
+}
+
+.footer__nav__socials.facebook {
+  padding: 0 5rem;
+}
+
+.footer__nav__facebook:hover {
+  fill: #fa5757;
+  cursor: pointer;
+}
+
+.footer__nav__twitter--path:hover {
+  fill: #fa5757;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
