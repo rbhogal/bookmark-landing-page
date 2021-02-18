@@ -40,6 +40,7 @@
         }
 
         &.active::after {
+          content: url(/images/icon-arrow-red.svg);
           transform: rotate(180deg);
         }
       }
