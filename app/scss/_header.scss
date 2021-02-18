@@ -55,5 +55,10 @@
       color: $soft-red;
       border: 0.01 rem solid $soft-red;
     }
+
+    &:active {
+      transform: translateY(1.5px);
+      box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
   }
 }

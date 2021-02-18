@@ -33,6 +33,16 @@
       outline: none;
     }
 
+    &__tab--1.active {
+      color: black;
+    }
+    &__tab--2.active {
+      color: black;
+    }
+    &__tab--3.active {
+      color: black;
+    }
+
     &__divs {
       display: flex;
       justify-content: center;
@@ -42,6 +52,16 @@
         width: 32.5rem;
         height: 0.5rem;
         box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
+
+      &__div--1.active {
+          background-color: $soft-red;
+      }
+      &__div--2.active {
+          background-color: $soft-red;
+      }
+      &__div--3.active {
+          background-color: $soft-red;
       }
     }
 
@@ -60,6 +80,11 @@
         outline: none;
         border-radius: 0.5rem;
         padding: 2rem 3rem;
+
+        &:active {
+          transform: translateY(1.5px);
+          box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        }
       }
     }
 
@@ -139,6 +164,4 @@
   }
 }
 
-.active-tab {
-  background-color: $soft-red;
-}
+
