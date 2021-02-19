@@ -102,7 +102,7 @@ p {
 .header__btn-login:hover {
   background-color: white;
   color: #fa5757;
-  border: 0.01 rem solid #fa5757;
+  border: solid #fa5757;
 }
 
 .header__btn-login:active {
@@ -673,53 +673,59 @@ p {
   margin-bottom: 0;
 }
 
-.footer__contact {
+.footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.footer__header {
+.footer__form__container {
+  position: relative;
+  background-color: #fa5757;
+  padding-bottom: 3rem;
+  border-radius: 5px;
+}
+
+.footer__form__container i {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #fa5757;
+}
+
+.footer__form__container small {
+  position: absolute;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
   color: white;
-  text-align: center;
-  width: 54.5rem;
-  font-size: 4.2rem;
-  margin: 6rem 0;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
 }
 
-.footer__input__email {
+.footer__form__email {
   color: black;
   font-size: 1.8rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   font-family: inherit;
   font-weight: 400;
   border-radius: 0.5rem;
-  border: none;
-  padding-left: 2.8rem;
-  margin-right: 2rem;
+  border: solid #fa5757;
+  padding-left: 2.5rem;
+  display: block;
 }
 
-.footer__input__email:focus {
+.footer__form__email:focus {
   outline: none;
 }
 
-.footer__input__email::-webkit-input-placeholder {
+.footer__form__email::-webkit-input-placeholder {
   color: rgba(145, 148, 161, 0.5);
 }
 
-.footer__input__email:input:invalid {
-  content: "wrong";
-}
-
-.footer__input__submit {
+.footer__form__submit {
   color: white;
   background-color: #fa5757;
   font-size: 1.8rem;
@@ -734,13 +740,23 @@ p {
   border: none;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-left: 2rem;
+  max-height: 6rem;
 }
 
-.footer__input__submit:active {
+.footer__form__submit:active {
   -webkit-transform: translateY(1.5px);
           transform: translateY(1.5px);
   -webkit-box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.footer__header {
+  color: white;
+  text-align: center;
+  width: 54.5rem;
+  font-size: 4.2rem;
+  margin: 6rem 0;
 }
 
 .footer__nav {

@@ -21,6 +21,12 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
 
+    <script
+      src="https://kit.fontawesome.com/d98540feba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/app/js/script.js"></script>
+
     <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -245,27 +251,23 @@
 
     <footer class="footer">
       <p class="footer__subtext">35,000+ already joined</p>
-      <form class="footer__contact">
-        <label for="email"
-          ><h2 class="footer__header">
-            Stay up-to-date with what we're doing
-          </h2></label
-        >
-        <div class="footer__input__container">
+      <h2 class="footer__header">Stay up-to-date with what we're doing</h2>
+
+      <form class="footer__form" id="form">
+        <div class="footer__form__container">
           <input
-            class="footer__input__email"
+            class="footer__form__email"
             type="email"
             id="email"
             size="35"
             placeholder="Enter your email address"
             required
           />
-          <input
-            class="footer__input__submit"
-            type="submit"
-            value="Contact Us"
-          />
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Whoops, make sure it's an email</small>
         </div>
+
+        <button class="footer__form__submit">Contact Us</button>
       </form>
 
       <nav class="footer__nav">
@@ -290,9 +292,14 @@
               />
             </svg>
           </a>
-  
+
           <a class="footer__nav__socials twitter" href="#">
-            <svg class="footer__nav__twitter--svg"xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+            <svg
+              class="footer__nav__twitter--svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="20"
+            >
               <path
                 class="footer__nav__twitter--path"
                 fill="#FFF"
@@ -302,7 +309,6 @@
             </svg>
           </a>
         </div>
-        
 
         <!-- <p class="attribution">
           Challenge by
@@ -311,7 +317,6 @@
           >. Coded by <a href="#">Your Name Here</a>.
         </p> -->
       </nav>
-      <script src="/app/js/script.js"></script>
-    </footer> 
+    </footer>
   </body>
 </html>

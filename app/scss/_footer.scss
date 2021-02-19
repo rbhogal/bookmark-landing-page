@@ -15,10 +15,69 @@
     margin-bottom: 0;
   }
 
-  &__contact {
+  &__form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    &__container {
+      position: relative;
+      background-color: $soft-red;
+      padding-bottom: 3rem;
+      border-radius: 5px;
+
+      & i {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        font-size: 3rem;
+        color: $soft-red;
+      }
+
+      & small {
+        position: absolute;
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 500;
+        color: white;
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+      }
+    }
+
+    &__email {
+      color: black;
+      font-size: 1.8rem;
+      padding-top: 1.7rem;
+      padding-bottom: 1.7rem;
+      font-family: inherit;
+      font-weight: 400;
+      border-radius: 0.5rem;
+      border: solid $soft-red;
+      padding-left: 2.5rem;
+      display: block;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::-webkit-input-placeholder {
+        color: rgba(145, 148, 161, 0.5);
+      }
+    }
+
+    &__submit {
+      @include btn(white, $soft-red);
+      outline: none;
+      border: none;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      margin-left: 2rem;
+      max-height: 6rem;
+      
+      &:active {
+        transform: translateY(1.5px);
+        box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
+    }
   }
 
   &__header {
@@ -27,44 +86,6 @@
     width: 54.5rem;
     font-size: 4.2rem;
     margin: 6rem 0;
-  }
-
-  &__input__email {
-    color: black;
-    font-size: 1.8rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-family: inherit;
-    font-weight: 400;
-    border-radius: 0.5rem;
-    border: none;
-    padding-left: 2.8rem;
-    margin-right: 2rem;
-
-    &:focus {
-      outline: none;
-    }
-
-    &::-webkit-input-placeholder {
-      color: rgba(145, 148, 161, 0.5);
-    }
-
-    &:input:invalid {
-      content: "wrong";
-    }
-  }
-
-  &__input__submit {
-    @include btn(white, $soft-red);
-    outline: none;
-    border: none;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-    &:active {
-      transform: translateY(1.5px);
-      box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    }
   }
 
   &__nav {
