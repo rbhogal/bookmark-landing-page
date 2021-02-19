@@ -681,12 +681,28 @@ p {
 
 .footer__form__container {
   position: relative;
-  background-color: #fa5757;
   padding-bottom: 3rem;
   border-radius: 5px;
 }
 
+.footer__form__container.error {
+  background-color: #fa5757;
+}
+
+.footer__form__container.error input {
+  border-color: #fa5757;
+}
+
+.footer__form__container.error i.fa-exclamation-circle {
+  visibility: visible;
+}
+
+.footer__form__container.error small {
+  visibility: visible;
+}
+
 .footer__form__container i {
+  visibility: hidden;
   position: absolute;
   top: 1.5rem;
   right: 2rem;
@@ -695,6 +711,7 @@ p {
 }
 
 .footer__form__container small {
+  visibility: hidden;
   position: absolute;
   font-size: 1.2rem;
   font-style: italic;
@@ -712,7 +729,7 @@ p {
   font-family: inherit;
   font-weight: 400;
   border-radius: 0.5rem;
-  border: solid #fa5757;
+  border: solid white;
   padding-left: 2.5rem;
   display: block;
 }
@@ -729,19 +746,24 @@ p {
   color: white;
   background-color: #fa5757;
   font-size: 1.8rem;
-  padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   font-family: inherit;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
   border-radius: 0.5rem;
   outline: none;
-  border: none;
+  border: solid #fa5757;
   padding-left: 3rem;
   padding-right: 3rem;
   margin-left: 2rem;
-  max-height: 6rem;
+  max-height: 6.2rem;
+}
+
+.footer__form__submit:hover {
+  background-color: white;
+  color: #fa5757;
 }
 
 .footer__form__submit:active {
