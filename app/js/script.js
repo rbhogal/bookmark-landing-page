@@ -6,6 +6,9 @@ const accItemHeaders = document.querySelectorAll(
 const form = document.getElementById("form");
 const email = document.getElementById("email");
 
+// Variables
+const formContainer = email.parentElement;
+
 // faq accordion
 accItemHeaders.forEach((accItemHeader) => {
   accItemHeader.addEventListener("click", () => {
@@ -39,7 +42,12 @@ form.addEventListener("submit", (e) => {
 function checkEmailInput() {
   const emailValue = email.value.trim();
 
-  if (!isEmail(emailValue)) setError(email);
+  // Check if email input already has error class and remove it if it does
+  if (formContainer.classList.contains("error")) {
+    formContainer.classList.toggle("error");
+  }
+
+  if (!isEmail(emailValue)) setError();
 }
 
 function isEmail(email) {
@@ -48,9 +56,6 @@ function isEmail(email) {
   );
 }
 
-function setError(email) {
-  const formContainer = email.parentElement;
-
-
+function setError() {
   formContainer.classList.toggle("error");
 }

@@ -40,19 +40,30 @@
 
   &__btn--chrome {
     @include btn(white, $soft-blue);
+    border: solid $soft-blue;
+
+    &:hover {
+      background-color: white;
+      color: $soft-blue;
+    }
   }
 
   &__btn--firefox {
     @include btn(dimgrey, whitesmoke);
     margin-left: 2rem;
+    border: solid whitesmoke;
+
+    &:hover {
+      background-color: white;
+      border: solid dimgrey;
+    }
   }
 
   & button {
     text-decoration: none;
-    padding-right: 3.3rem;
-    padding-left: 3.3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
     border-radius: 0.5rem;
-    border: none;
     outline: none;
     border-radius: 0.5rem;
 

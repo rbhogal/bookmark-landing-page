@@ -2,6 +2,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -167,35 +168,48 @@ p {
   color: white;
   background-color: #5368df;
   font-size: 1.8rem;
-  padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   font-family: inherit;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
   border-radius: 0.5rem;
+  cursor: pointer;
+  border: solid #5368df;
+}
+
+.hero__btn--chrome:hover {
+  background-color: white;
+  color: #5368df;
 }
 
 .hero__btn--firefox {
   color: dimgrey;
   background-color: whitesmoke;
   font-size: 1.8rem;
-  padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   font-family: inherit;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
   border-radius: 0.5rem;
+  cursor: pointer;
   margin-left: 2rem;
+  border: solid whitesmoke;
+}
+
+.hero__btn--firefox:hover {
+  background-color: white;
+  border: solid dimgrey;
 }
 
 .hero button {
   text-decoration: none;
-  padding-right: 3.3rem;
-  padding-left: 3.3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   border-radius: 0.5rem;
-  border: none;
   outline: none;
   border-radius: 0.5rem;
 }
@@ -301,13 +315,14 @@ p {
   color: white;
   background-color: #5368df;
   font-size: 1.8rem;
-  padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   font-family: inherit;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
   border-radius: 0.5rem;
+  cursor: pointer;
   border: none;
   outline: none;
   border-radius: 0.5rem;
@@ -530,18 +545,20 @@ p {
   color: white;
   background-color: #5368df;
   font-size: 1.8rem;
-  padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   font-family: inherit;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
   border-radius: 0.5rem;
+  cursor: pointer;
   outline: none;
-  border: none;
+  border: Solid #5368df;
+  border-radius: 0.5rem;
   font-size: 1.6rem;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
+  padding-left: 4.2rem;
+  padding-right: 4.2rem;
   margin: 3.5rem;
 }
 
@@ -550,6 +567,11 @@ p {
           transform: translateY(1.5px);
   -webkit-box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.extensions__card button:hover {
+  color: #5368df;
+  background-color: white;
 }
 
 .faq {
@@ -626,13 +648,14 @@ p {
   color: white;
   background-color: #5368df;
   font-size: 1.8rem;
-  padding-top: 2.0rem;
-  padding-bottom: 2.0rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
   font-family: inherit;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
   border-radius: 0.5rem;
+  cursor: pointer;
   border: none;
   outline: none;
   border-radius: 0.5rem;
@@ -753,6 +776,7 @@ p {
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   font-weight: 500;
   border-radius: 0.5rem;
+  cursor: pointer;
   outline: none;
   border: solid #fa5757;
   padding-left: 3rem;

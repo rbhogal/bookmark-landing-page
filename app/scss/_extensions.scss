@@ -75,15 +75,22 @@
     & button {
       @include btn(white, $soft-blue);
       outline: none;
-      border: none;
+      border: Solid $soft-blue;
+      border-radius: 0.5rem;
       font-size: 1.6rem;
-      padding-left: 4.5rem;
-      padding-right: 4.5rem;
+      padding-left: 4.2rem;
+      padding-right: 4.2rem;
       margin: 3.5rem;
 
       &:active {
         transform: translateY(1.5px);
         box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
+
+      &:hover {
+        color: $soft-blue;
+        background-color: white;
+
       }
     }
   }
