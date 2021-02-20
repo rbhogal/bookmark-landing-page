@@ -348,6 +348,11 @@ p {
       align-self: center;
   padding-left: 25%;
   width: 100%;
+  visibility: hidden;
+}
+
+.features__tabs__tab-1__img.active {
+  visibility: visible;
 }
 
 .features__tabs__tab-2__img {
@@ -363,6 +368,11 @@ p {
   padding-left: 32.5rem;
   width: 100%;
   padding-top: 9.5rem;
+  visibility: hidden;
+}
+
+.features__tabs__tab-2__img.active {
+  visibility: visible;
 }
 
 .features__tabs__tab-3__img {
@@ -377,6 +387,11 @@ p {
       align-self: center;
   padding-left: 32.5rem;
   width: 100%;
+  visibility: hidden;
+}
+
+.features__tabs__tab-3__img.active {
+  visibility: visible;
 }
 
 .features__tabs__background-shape {
@@ -394,7 +409,7 @@ p {
   margin-top: 20rem;
 }
 
-.features__tabs__tab-1__text {
+.features__tabs__tab-1__content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / -1 / 3;
@@ -403,14 +418,19 @@ p {
           justify-content: start;
   padding-top: 16.3rem;
   padding-left: 16.5rem;
+  visibility: hidden;
 }
 
-.features__tabs__tab-1__text--subtext {
+.features__tabs__tab-1__content--subtext {
   width: 65rem;
   height: 10rem;
 }
 
-.features__tabs__tab-2__text {
+.features__tabs__tab-1__content.active {
+  visibility: visible;
+}
+
+.features__tabs__tab-2__content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / -1 / 3;
@@ -419,14 +439,19 @@ p {
           justify-content: start;
   padding-top: 16.3rem;
   padding-left: 16.5rem;
+  visibility: hidden;
 }
 
-.features__tabs__tab-2__text--subtext {
+.features__tabs__tab-2__content--subtext {
   width: 57.5rem;
   height: 10rem;
 }
 
-.features__tabs__tab-3__text {
+.features__tabs__tab-2__content.active {
+  visibility: visible;
+}
+
+.features__tabs__tab-3__content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / -1 / 3;
@@ -435,11 +460,16 @@ p {
           justify-content: start;
   padding-top: 16.3rem;
   padding-left: 16.5rem;
+  visibility: hidden;
 }
 
-.features__tabs__tab-3__text--subtext {
+.features__tabs__tab-3__content--subtext {
   width: 65rem;
   height: 10rem;
+}
+
+.features__tabs__tab-3__content.active {
+  visibility: visible;
 }
 
 .extensions {
