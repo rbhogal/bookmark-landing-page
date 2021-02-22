@@ -1,4 +1,5 @@
-/////////// Feature tabs ///////////
+////////////////////////////////////////////////////////
+/// Feature tabs
 
 // Selectors
 const tabs = document.querySelectorAll(".features__tab");
@@ -41,7 +42,8 @@ tabsContainer.addEventListener("click", (e) => {
     .classList.add("active");
 });
 
-/////////// FAQ accordion ///////////
+////////////////////////////////////////////////////////
+/// FAQ accordion
 
 // Selectors
 const accItemHeaders = document.querySelectorAll(
@@ -72,7 +74,8 @@ accItemHeaders.forEach((accItemHeader) => {
   });
 });
 
-/////////// Form validation error ///////////
+////////////////////////////////////////////////////////
+/// Form validation error
 
 // Selectors
 const form = document.getElementById("form");

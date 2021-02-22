@@ -839,7 +839,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #242946;
+  background-color: #252b46;
   width: 100%;
   height: 12rem;
   margin: 10rem;
@@ -912,5 +912,19 @@ p {
 .footer__nav__twitter--path:hover {
   fill: #fa5757;
   cursor: pointer;
+}
+
+.attribution-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.attribution-container {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
 }
 /*# sourceMappingURL=style.css.map */

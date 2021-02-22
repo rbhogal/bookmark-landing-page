@@ -123,7 +123,7 @@
 
   &__nav {
     display: flex;
-    background-color: #242946;
+    background-color: $very-dark-blue;
     width: 100%;
     height: 12rem;
     margin: 10rem;
@@ -184,4 +184,15 @@
       }
     }
   }
+}
+
+.attribution-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.attribution-container {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
 }
