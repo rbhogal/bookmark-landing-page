@@ -1,16 +1,18 @@
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: [space-start] 11vw [space-end text-start] minmax(min-content, 77rem) [text-end shape-start img-start] minmax(min-content, 82rem) [img-end] 1fr [shape-end];
   grid-template-rows: 1fr;
   height: 75rem;
-  padding-left: 22.0rem;
+  // padding-left: 22rem;
+  // padding-left: 11%;
 
   &__text {
-    grid-area: 1 / 1 / -1 / 2;
+    grid-area: 1 / text-start / -1 / text-end;
     align-self: center;
+    max-width: 72.3rem;
 
     &__subtext {
-      width: 64rem;
+      max-width: 64rem;
       height: 14.5rem;
       margin: 0;
     }
@@ -19,23 +21,24 @@
   &__img {
     min-height: 60rem;
     background-size: cover;
-    grid-area: 1 / 2 / -1 / -1;
+    grid-area: 1 / img-start / -1 / img-end;
     align-self: center;
     justify-self: start;
   }
 
   &__background-shape {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
     margin-top: 20rem;
     margin-left: 24rem;
-    width: 72rem;
-    height: 47rem;
+    // width: 72rem;
+    max-width: 100%;
+    max-height: 47rem;
     background-color: $soft-blue;
     border-radius: 20rem 0 0 20rem;
-    grid-area: 1 / 2 / -1 / -1;
+    grid-area: 1 / shape-start / -1 / shape-end;
   }
 
   &__btn--chrome {

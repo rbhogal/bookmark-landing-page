@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
@@ -5,11 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+@media only screen and (max-width: 103em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -33,6 +39,37 @@ p {
   font-size: 2.2rem;
 }
 
+/*
+
+// Breakpoints
+@media (min-width: 64em){
+  // styles go here
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
+
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}
+
+*/
+/*
+
+
+
+*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +81,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 8.5rem;
-  padding-left: 22.8rem;
+  padding-left: 11.5%;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -86,7 +123,7 @@ p {
   color: white;
   background-color: #fa5757;
   padding: 1rem 3rem;
-  margin-right: 14rem;
+  margin-right: 7%;
   border-radius: 0.5rem;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -116,25 +153,24 @@ p {
 .hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: [space-start] 11vw [space-end text-start] minmax(min-content, 77rem) [text-end shape-start img-start] minmax(min-content, 82rem) [img-end] 1fr [shape-end];
+      grid-template-columns: [space-start] 11vw [space-end text-start] minmax(-webkit-min-content, 77rem) [text-end shape-start img-start] minmax(-webkit-min-content, 82rem) [img-end] 1fr [shape-end];
+      grid-template-columns: [space-start] 11vw [space-end text-start] minmax(min-content, 77rem) [text-end shape-start img-start] minmax(min-content, 82rem) [img-end] 1fr [shape-end];
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   height: 75rem;
-  padding-left: 22.0rem;
 }
 
 .hero__text {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / -1 / 2;
+  grid-area: 1 / text-start / -1 / text-end;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  max-width: 72.3rem;
 }
 
 .hero__text__subtext {
-  width: 64rem;
+  max-width: 64rem;
   height: 14.5rem;
   margin: 0;
 }
@@ -142,7 +178,7 @@ p {
 .hero__img {
   min-height: 60rem;
   background-size: cover;
-  grid-area: 1 / 2 / -1 / -1;
+  grid-area: 1 / img-start / -1 / img-end;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -151,17 +187,13 @@ p {
 }
 
 .hero__background-shape {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin-top: 20rem;
   margin-left: 24rem;
-  width: 72rem;
-  height: 47rem;
+  max-width: 100%;
+  max-height: 47rem;
   background-color: #5368df;
   border-radius: 20rem 0 0 20rem;
-  grid-area: 1 / 2 / -1 / -1;
+  grid-area: 1 / shape-start / -1 / shape-end;
 }
 
 .hero__btn--chrome {
@@ -221,6 +253,37 @@ p {
           box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
+/*
+
+// Breakpoints
+@media (min-width: 64em){
+  // styles go here
+}
+
+// 640px, 1024px, 1400px
+$breakpoints-up: ("medium": "40em", "large": "64em", "xlarge": "87.5em");
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.4375em");
+
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}
+
+*/
+/*
+
+
+
+*/
 .features__heading {
   text-align: center;
 }
@@ -514,10 +577,12 @@ p {
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: 1fr (min-content)[3] 1fr;
+      grid-template-columns: 1fr repeat(3, -webkit-min-content) 1fr;
+      grid-template-columns: 1fr repeat(3, min-content) 1fr;
   width: 100%;
   height: 81.5rem;
+  gap: 4.4rem;
 }
 
 .extensions__card__chrome {

@@ -28,9 +28,11 @@
     &--grid-container {
       display: grid;
       grid-template-rows: 1fr;
-      grid-template-columns: repeat(5, 1fr);
+      // grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: 1fr repeat(3, min-content) 1fr;
       width: 100%;
       height: 81.5rem;
+      gap: 4.4rem;
     }
 
     &__chrome {
@@ -90,7 +92,6 @@
       &:hover {
         color: $soft-blue;
         background-color: white;
-
       }
     }
   }
