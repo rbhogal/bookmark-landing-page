@@ -1,29 +1,54 @@
+@import "globals";
+
 .hero {
   display: grid;
-  grid-template-columns: [space-start] 11vw [space-end text-start] minmax(min-content, 77rem) [text-end shape-start img-start] minmax(min-content, 82rem) [img-end] 1fr [shape-end];
+  grid-template-columns:
+    [space-start] 11vw [space-end text-start] minmax(min-content, 77rem)
+    [text-end shape-start img-start] minmax(min-content, 82rem)
+    [img-end] 1fr [shape-end];
   grid-template-rows: 1fr;
   height: 75rem;
   // padding-left: 22rem;
   // padding-left: 11%;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 1fr 1fr;
+    margin-top: 8rem;
+  }
 
   &__text {
     grid-area: 1 / text-start / -1 / text-end;
     align-self: center;
     max-width: 72.3rem;
 
+    @media only screen and (max-width: $bp-large) {
+      grid-area: 2 / space-start / 3 / img-end;
+      justify-self: center;
+      text-align: center;
+    }
+
     &__subtext {
       max-width: 64rem;
       height: 14.5rem;
       margin: 0;
+
+      @media only screen and (max-width: $bp-large) {
+        margin: 0 auto;
+      }
     }
   }
 
   &__img {
     min-height: 60rem;
     background-size: cover;
-    grid-area: 1 / img-start / -1 / img-end;
+    grid-area: 1 / img-start / 2 / img-end;
     align-self: center;
     justify-self: start;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-area: 1 / space-start / 2 / img-end;
+      justify-self: center;
+    }
   }
 
   &__background-shape {
@@ -39,6 +64,12 @@
     background-color: $soft-blue;
     border-radius: 20rem 0 0 20rem;
     grid-area: 1 / shape-start / -1 / shape-end;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-area: 1 / space-start / 2 / shape-end;
+      // margin-left: 56rem;
+      margin-left: 30%;
+    }
   }
 
   &__btn--chrome {
