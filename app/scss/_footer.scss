@@ -1,7 +1,6 @@
 .footer {
   background-color: $soft-blue;
   width: 100%;
-  height: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +16,10 @@
 
   &__form {
     display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
 
     &__container {
       position: relative;
@@ -78,6 +81,22 @@
       }
 
       &::-webkit-input-placeholder {
+        /* Chrome, Opera, Safari */
+        color: rgba(145, 148, 161, 0.5);
+      }
+
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        color: rgba(145, 148, 161, 0.5);
+      }
+
+      &:-ms-input-placeholder {
+        /* IE 10+ */
+        color: rgba(145, 148, 161, 0.5);
+      }
+
+      &:-moz-placeholder {
+        /* Firefox 18- */
         color: rgba(145, 148, 161, 0.5);
       }
     }
@@ -110,6 +129,10 @@
         transform: translateY(1.5px);
         box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
       }
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -126,7 +149,13 @@
     background-color: $very-dark-blue;
     width: 100%;
     height: 12rem;
-    margin: 10rem;
+    margin-top: 10rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+
+      height: 42rem;
+    }
 
     &__links {
       list-style: none;
@@ -146,6 +175,19 @@
       & li {
         margin: 0;
         padding: 0rem 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+          padding: 0;
+        }
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        gap: 4.4rem;
+        padding: 0;
+        font-size: 1.6rem;
+
+        margin: 5rem 0;
       }
     }
 
@@ -153,6 +195,12 @@
       display: flex;
       align-items: center;
       padding-left: 22rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding-left: 0;
+        margin: 0 auto;
+        margin-top: 5rem;
+      }
     }
 
     &__socials-container {
@@ -160,15 +208,28 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
+      @media only screen and (max-width: $bp-medium) {
+        justify-content: center;
+        gap: 5rem;
+      }
     }
 
     &__socials {
       &.twitter {
         padding-right: 22rem;
+
+        @media only screen and (max-width: $bp-medium) {
+          padding: 0;
+        }
       }
 
       &.facebook {
         padding: 0 5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+          padding: 0;
+        }
       }
     }
 

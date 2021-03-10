@@ -1,7 +1,10 @@
 .faq {
   width: 100%;
   text-align: center;
-
+  
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 103rem;
+  }
   &__subtext {
     margin: 0 auto;
     width: 66rem;

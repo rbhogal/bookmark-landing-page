@@ -49,6 +49,14 @@
       grid-area: 1 / space-start / 2 / img-end;
       justify-self: center;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 100%;
+      display: block;
+      min-height: auto;
+    }
+
+
   }
 
   &__background-shape {
