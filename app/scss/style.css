@@ -396,7 +396,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   padding-bottom: 6rem;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__subtext {
     padding-bottom: 0;
   }
@@ -415,7 +415,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
       grid-template-rows: 1fr;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs {
     width: 100%;
     height: 100%;
@@ -438,7 +438,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   outline: none;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs button {
     width: 49rem;
     height: 7.5rem;
@@ -451,7 +451,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   display: none;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__tab--empty {
     display: block;
     grid-column: 1 / -1;
@@ -467,7 +467,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   grid-row: 1 / 2;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__tab--1 {
     grid-column: 1 / -1;
     -ms-grid-row: 2;
@@ -482,7 +482,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   grid-column: 2 / 3;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__tab--2 {
     grid-column: 1 / -1;
     -ms-grid-row: 3;
@@ -497,7 +497,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   grid-column: 3 / 4;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__tab--3 {
     grid-column: 1 / -1;
     -ms-grid-row: 4;
@@ -527,7 +527,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
       justify-self: center;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs div {
     -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0);
             box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0);
@@ -543,7 +543,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
       align-self: end;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__div--1 {
     grid-column: 1 / -1;
     -ms-grid-row: 2;
@@ -561,7 +561,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
       align-self: end;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__div--2 {
     grid-column: 1 / -1;
     -ms-grid-row: 3;
@@ -579,7 +579,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
       align-self: end;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__div--3 {
     grid-column: 1 / -1;
     -ms-grid-row: 4;
@@ -592,7 +592,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   background-color: #fa5757;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__div--1.active {
     -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
             box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -603,7 +603,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   background-color: #fa5757;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__div--2.active {
     -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
             box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -614,7 +614,7 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   background-color: #fa5757;
 }
 
-@media only screen and (max-width: 48.75em) {
+@media only screen and (max-width: 60.5em) {
   .features__tabs__div--3.active {
     -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
             box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
