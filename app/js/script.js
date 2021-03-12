@@ -28,7 +28,7 @@ tabsContainer.addEventListener("click", (e) => {
 
   // div
   document
-    .querySelector(`.features__tabs__divs__div--${clicked.dataset.tab}`)
+    .querySelector(`.features__tabs__div--${clicked.dataset.tab}`)
     .classList.add("active");
 
   // img

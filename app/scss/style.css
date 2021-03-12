@@ -500,7 +500,9 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 @media only screen and (max-width: 48.75em) {
   .features__tabs__tab--3 {
     grid-column: 1 / -1;
-    grid-rwo: 4 /5;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
   }
 }
 
