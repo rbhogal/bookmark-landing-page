@@ -121,6 +121,10 @@
       box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 
       justify-self: center;
+
+      @media only screen and (max-width: $bp-small) {
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0);
+      }
     }
 
     &__div--1 {
@@ -130,6 +134,7 @@
       @media only screen and (max-width: $bp-small) {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
+
       }
     }
     &__div--2 {
@@ -154,12 +159,24 @@
 
     &__div--1.active {
       background-color: $soft-red;
+
+      @media only screen and (max-width: $bp-small) {
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
     }
     &__div--2.active {
       background-color: $soft-red;
+
+      @media only screen and (max-width: $bp-small) {
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
     }
     &__div--3.active {
       background-color: $soft-red;
+
+      @media only screen and (max-width: $bp-small) {
+        box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+      }
     }
     // }
 

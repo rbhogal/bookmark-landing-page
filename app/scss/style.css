@@ -527,6 +527,13 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
       justify-self: center;
 }
 
+@media only screen and (max-width: 48.75em) {
+  .features__tabs div {
+    -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0);
+            box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0);
+  }
+}
+
 .features__tabs__div--1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -585,12 +592,33 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   background-color: #fa5757;
 }
 
+@media only screen and (max-width: 48.75em) {
+  .features__tabs__div--1.active {
+    -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+}
+
 .features__tabs__div--2.active {
   background-color: #fa5757;
 }
 
+@media only screen and (max-width: 48.75em) {
+  .features__tabs__div--2.active {
+    -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+}
+
 .features__tabs__div--3.active {
   background-color: #fa5757;
+}
+
+@media only screen and (max-width: 48.75em) {
+  .features__tabs__div--3.active {
+    -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
 }
 
 .features__tabs__grid-container {
