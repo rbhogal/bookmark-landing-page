@@ -82,10 +82,39 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
           align-items: center;
   padding-top: 8.5rem;
   padding-left: 11.5%;
+  padding-right: 6%;
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-family: inherit;
+}
+
+.header.open .header__menu > span {
+  background-color: white;
+}
+
+.header.open .header__menu > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0rem;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(37, 43, 70, 0.9);
 }
 
 .header img {
@@ -118,12 +147,17 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   color: #fa5757;
 }
 
+@media only screen and (max-width: 45.3em) {
+  .header__links {
+    display: none;
+  }
+}
+
 .header__btn-login {
   border: solid #fa5757;
   color: white;
   background-color: #fa5757;
   padding: 1rem 3rem;
-  margin-right: 7%;
   border-radius: 0.5rem;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -148,6 +182,37 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
           transform: translateY(1.5px);
   -webkit-box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 45.3em) {
+  .header__btn-login {
+    display: none;
+  }
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__menu > span {
+  display: block;
+  width: 18px;
+  height: 3px;
+  background-color: #252b46;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 0.5px center;
+          transform-origin: 0.5px center;
+}
+
+.header__menu > span:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 45.3em) {
+  .header__menu {
+    display: block;
+  }
 }
 
 *,
@@ -1494,5 +1559,73 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 .attribution-container {
   grid-row: 1 / -1;
   grid-column: 1 / -1;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */

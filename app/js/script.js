@@ -110,3 +110,29 @@ function isEmail(email) {
 function setError() {
   formContainer.classList.toggle("error");
 }
+
+////////////////////////////////////////////////////////
+/// Mobile Hamburger Menu
+
+// Selector
+const btnHamburger = document.querySelector(".header__menu");
+const header = document.querySelector(".header");
+const overlay = document.querySelector(".overlay");
+
+// Event listener
+
+btnHamburger.addEventListener("click", function () {
+
+  // Close hamburger menu
+  if (header.classList.contains("open")) {
+    header.classList.toggle("open");
+    overlay.classList.toggle("fade-in");
+    overlay.classList.add("fade-out");
+    return;
+  }
+
+  // Open hamburger menu
+  header.classList.toggle("open");
+  overlay.classList.toggle("fade-in");
+  overlay.classList.remove("fade-out");
+});
