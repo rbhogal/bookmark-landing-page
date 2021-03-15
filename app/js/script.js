@@ -118,6 +118,7 @@ function setError() {
 const btnHamburger = document.querySelector(".header__menu");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
+const logo = document.querySelector('.header__logo');
 
 // Event listener
 
@@ -128,6 +129,9 @@ btnHamburger.addEventListener("click", function () {
     header.classList.toggle("open");
     overlay.classList.toggle("fade-in");
     overlay.classList.add("fade-out");
+
+    logo.classList.toggle("fade-in");
+
     return;
   }
 
@@ -135,4 +139,8 @@ btnHamburger.addEventListener("click", function () {
   header.classList.toggle("open");
   overlay.classList.toggle("fade-in");
   overlay.classList.remove("fade-out");
+  logo.classList.toggle("fade-in");
+
+
+
 });

@@ -10,16 +10,30 @@
 
   @include font-styles();
 
-  // Hamburger Open Styles
+  @media only screen and (max-width: $bp-x-small) {
+    padding-top: 5rem;
+  }
 
+  // Hamburger Open Styles
   &.open {
 
     .header__logo {
-      
+
+      &--path {
+        fill: white;
+      }
+
+      &--circle {
+        fill: white;
+      }
+
+      &--circle-fill{
+        fill:  rgba(37, 43, 70, 0.9);
+      }
     }
+    
 
     .header__menu {
-      
       > span {
         background-color: white;
       }
@@ -54,6 +68,14 @@
 
   &__logo {
     margin-right: auto;
+    
+    &--path {
+      // fill:white;
+    }
+  }
+
+  &__logo--circle {
+    // fill: white;
   }
 
   &__links {

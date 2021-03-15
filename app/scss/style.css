@@ -89,6 +89,24 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
   font-family: inherit;
 }
 
+@media only screen and (max-width: 45.3em) {
+  .header {
+    padding-top: 5rem;
+  }
+}
+
+.header.open .header__logo--path {
+  fill: white;
+}
+
+.header.open .header__logo--circle {
+  fill: white;
+}
+
+.header.open .header__logo--circle-fill {
+  fill: rgba(37, 43, 70, 0.9);
+}
+
 .header.open .header__menu > span {
   background-color: white;
 }
@@ -697,8 +715,8 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
 @media only screen and (max-width: 84em) {
   .features__tabs__grid-container {
-    -ms-grid-columns: 1fr minmax(31rem, 71.5rem) 1fr;
-        grid-template-columns: 1fr minmax(31rem, 71.5rem) 1fr;
+    -ms-grid-columns: minmax(4rem, 1fr) minmax(31rem, 71.5rem) minmax(4rem, 1fr);
+        grid-template-columns: minmax(4rem, 1fr) minmax(31rem, 71.5rem) minmax(4rem, 1fr);
     -ms-grid-rows: 1fr min-content;
         grid-template-rows: 1fr -webkit-min-content;
         grid-template-rows: 1fr min-content;
@@ -1170,6 +1188,9 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
 
 .faq__accordion__item {
   border-top: 1px solid lightgrey;
+}
+
+.faq__accordion__item:last-child {
   border-bottom: 1px solid lightgrey;
 }
 

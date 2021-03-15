@@ -1,7 +1,7 @@
 .faq {
   width: 100%;
   text-align: center;
-  
+
   @media only screen and (max-width: $bp-medium) {
     margin-top: 103rem;
   }
@@ -20,7 +20,10 @@
 
     &__item {
       border-top: 1px solid lightgrey;
-      border-bottom: 1px solid lightgrey;
+
+      &:last-child {
+        border-bottom: 1px solid lightgrey;
+      }
 
       &__header {
         font-weight: 400;
