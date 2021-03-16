@@ -29,7 +29,8 @@
     text-align: left;
 
     @media only screen and (max-width: $bp-x-small) {
-      max-width: 39rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
      }
 
     &__item {

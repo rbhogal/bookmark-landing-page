@@ -1249,7 +1249,8 @@ p {
 
 @media only screen and (max-width: 45.3em) {
   .faq__accordion {
-    max-width: 39rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
