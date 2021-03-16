@@ -3,6 +3,10 @@
     margin-top: 50rem;
   }
 
+  @media only screen and (max-width: $bp-x-small) {
+    margin-top: 18.75rem;
+  }
+
   &__heading {
     text-align: center;
   }
@@ -16,6 +20,9 @@
     @media only screen and (max-width: $bp-medium) {
       padding-bottom: 0;
     }
+    @media only screen and (max-width: $bp-x-small) {
+      padding: 0 4.5rem;
+    }
   }
 
   //   &__tabs__container {
@@ -26,6 +33,8 @@
     width: 97.5rem;
     height: 10rem;
     margin: 0 auto;
+    margin-top: 5.625rem;
+    padding: 0 4rem;
 
     // display: flex;
     // justify-content: center;
@@ -54,20 +63,14 @@
       outline: none;
 
       @media only screen and (max-width: $bp-medium) {
-        width: 49rem;
+        max-width: 49rem;
         height: 7.5rem;
         border-bottom: 1px solid lightgrey;
-
         margin: 0 auto;
-      }
-    }
 
-    &__tab--empty {
-      display: none;
-      @media only screen and (max-width: $bp-medium) {
-        display: block;
-
-        grid-column: 1 / -1;
+        &:first-child {
+          border-top: 1px solid lightgrey;
+        }
       }
     }
 
@@ -119,11 +122,11 @@
       width: 32.5rem;
       height: 0.5rem;
       box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-
       justify-self: center;
 
       @media only screen and (max-width: $bp-medium) {
         box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0);
+        width: 17.75rem;
       }
     }
 
@@ -194,6 +197,11 @@
 
       & p {
         font-size: 2.7rem;
+
+        @media only screen and (max-width: $bp-xx-small) {
+          font-size: 1.8rem;
+          line-height: 20px;
+        }
       }
 
       & button {
@@ -276,9 +284,10 @@
       max-width: 85rem;
       max-height: 47rem;
       background-color: $soft-blue;
-      border-radius: 0 30rem 20rem 0;
+      border-radius: 0 36.5rem 20rem 0;
       grid-area: 1 / 1 / -1 / 2;
       margin-top: 20rem;
+      margin-right: 6.5rem;
 
       @media only screen and (max-width: $bp-largest) {
         max-height: 55rem;
@@ -286,6 +295,11 @@
 
       @media only screen and (max-width: $bp-large) {
         grid-area: 1 / 1 / 2 / 3;
+        margin-bottom: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-xx-small) {
+        margin-top: 13.375rem;
       }
     }
 
@@ -313,6 +327,10 @@
         padding-left: 0;
         justify-self: center;
       }
+
+      @media only screen and (max-width: $bp-xx-small) {
+        padding: 0 4.375rem;
+      }
     }
 
     &__tab-2__content {
@@ -323,8 +341,8 @@
       visibility: hidden;
 
       &--subtext {
-        width: 57.5rem;
-        height: 10rem;
+        max-width: 57.5rem;
+        // height: 10rem;
       }
 
       &.active {
@@ -349,8 +367,8 @@
       visibility: hidden;
 
       &--subtext {
-        width: 65rem;
-        height: 10rem;
+        max-width: 65rem;
+        // height: 10rem;
       }
 
       &.active {

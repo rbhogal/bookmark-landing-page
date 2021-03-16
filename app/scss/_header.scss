@@ -16,9 +16,8 @@
 
   // Hamburger Open Styles
   &.open {
-
+    
     .header__logo {
-
       &--path {
         fill: white;
       }
@@ -27,13 +26,12 @@
         fill: white;
       }
 
-      &--circle-fill{
-        fill:  rgba(37, 43, 70, 0.9);
+      &--circle-fill {
+        fill: rgba(37, 43, 70, 0.9);
       }
     }
-    
 
-    .header__menu {
+    .header__toggle {
       > span {
         background-color: white;
       }
@@ -61,6 +59,11 @@
     background-color: rgba(37, 43, 70, 0.9);
   }
 
+  &__menu {
+    list-style: none;
+
+  }
+
   img {
     height: 3.5rem;
     width: 20rem;
@@ -68,14 +71,6 @@
 
   &__logo {
     margin-right: auto;
-    
-    &--path {
-      // fill:white;
-    }
-  }
-
-  &__logo--circle {
-    // fill: white;
   }
 
   &__links {
@@ -130,7 +125,8 @@
     }
   }
 
-  &__menu {
+  &__toggle {
+    // Mobile menu toggle
     display: none;
 
     > span {

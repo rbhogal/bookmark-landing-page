@@ -41,9 +41,6 @@
   <body>
     <header class="header">
       <div class="overlay fade-out">
-        <!-- <ul><li>features</li>
-        <li></li>
-        <li></li></ul> -->
       </div>
       <a href="#" class="header__logo">
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -63,6 +60,11 @@
           </g>
         </svg>
       </a>
+
+      <div class="header__menu">
+        
+      </div>
+
       <nav>
         <ul class="header__links">
           <li><a href="#features">Features</a></li>
@@ -71,7 +73,7 @@
         </ul>
       </nav>
       <button class="header__btn-login">Login</button>
-      <a class="header__menu" href="#">
+      <a class="header__toggle" href="#">
         <span></span>
         <span></span>
         <span></span>
@@ -105,11 +107,6 @@
       </p>
 
       <div class="features__tabs">
-        <button
-          class="features__tabs__tab--empty"
-          type="button"
-          disabled
-        ></button>
         <button
           class="features__tab features__tabs__tab--1 active"
           data-tab="1"

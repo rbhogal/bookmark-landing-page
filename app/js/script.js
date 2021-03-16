@@ -115,7 +115,7 @@ function setError() {
 /// Mobile Hamburger Menu
 
 // Selector
-const btnHamburger = document.querySelector(".header__menu");
+const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const logo = document.querySelector('.header__logo');
