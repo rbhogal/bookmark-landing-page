@@ -16,6 +16,7 @@
 
   // Hamburger Open Styles
   &.open {
+
     .header__logo {
       &--path {
         fill: white;
@@ -48,7 +49,8 @@
   }
 
   .overlay {
-    opacity: 0;
+    visibility: hidden;
+    opacity: 0; 
     position: fixed;
     // top: 12.375rem;
     top: 0rem;

@@ -128,7 +128,9 @@ btnHamburger.addEventListener("click", function () {
   // Close hamburger menu
   if (header.classList.contains("open")) {
     body.classList.remove('noscroll');
+
     header.classList.toggle("open");
+
     overlay.classList.toggle("fade-in");
     overlay.classList.add("fade-out");
 
@@ -139,11 +141,11 @@ btnHamburger.addEventListener("click", function () {
 
   // Open hamburger menu
   body.classList.add('noscroll');
+
   header.classList.toggle("open");
+
   overlay.classList.toggle("fade-in");
   overlay.classList.remove("fade-out");
+
   logo.classList.toggle("fade-in");
-
-
-
 });
