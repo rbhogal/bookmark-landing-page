@@ -42,6 +42,10 @@ body {
   // padding-left: 22rem;
   // padding-right: 8.0rem;
   font-family: "Rubik", sans-serif;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 h1 {

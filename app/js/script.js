@@ -116,6 +116,7 @@ function setError() {
 
 // Selector
 const btnHamburger = document.querySelector(".header__toggle");
+const body = document.querySelector('body');
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const logo = document.querySelector('.header__logo');
@@ -126,6 +127,7 @@ btnHamburger.addEventListener("click", function () {
 
   // Close hamburger menu
   if (header.classList.contains("open")) {
+    body.classList.remove('noscroll');
     header.classList.toggle("open");
     overlay.classList.toggle("fade-in");
     overlay.classList.add("fade-out");
@@ -136,6 +138,7 @@ btnHamburger.addEventListener("click", function () {
   }
 
   // Open hamburger menu
+  body.classList.add('noscroll');
   header.classList.toggle("open");
   overlay.classList.toggle("fade-in");
   overlay.classList.remove("fade-out");
