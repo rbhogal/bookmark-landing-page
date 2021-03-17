@@ -8,7 +8,6 @@
 
   &__header {
     padding: 0 2.75rem;
-    
   }
 
   &__subtext {
@@ -16,7 +15,7 @@
     max-width: 66rem;
 
     @media only screen and (max-width: $bp-medium) {
-     max-width: 37.5rem;
+      max-width: 37.5rem;
     }
   }
 
@@ -31,7 +30,7 @@
     @media only screen and (max-width: $bp-x-small) {
       padding-left: 4rem;
       padding-right: 4rem;
-     }
+    }
 
     &__item {
       border-top: 1px solid lightgrey;
@@ -50,7 +49,7 @@
 
         @media only screen and (max-width: $bp-x-small) {
           font-size: 1.7rem;
-         }
+        }
 
         &:hover {
           color: $soft-red;
