@@ -116,18 +116,20 @@ function setError() {
 
 // Selector
 const btnHamburger = document.querySelector(".header__toggle");
-const body = document.querySelector('body');
+const body = document.querySelector("body");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
-const logo = document.querySelector('.header__logo');
+const logo = document.querySelector(".header__logo");
 
-// Event listener
+const headerMenuItem = document.querySelectorAll(".header__menu__item");
 
-btnHamburger.addEventListener("click", function () {
+// Menu toggle
+btnHamburger.addEventListener("click", menuToggle);
 
+function menuToggle() {
   // Close hamburger menu
   if (header.classList.contains("open")) {
-    body.classList.remove('noscroll');
+    body.classList.remove("noscroll");
 
     header.classList.toggle("open");
 
@@ -140,7 +142,7 @@ btnHamburger.addEventListener("click", function () {
   }
 
   // Open hamburger menu
-  body.classList.add('noscroll');
+  body.classList.add("noscroll");
 
   header.classList.toggle("open");
 
@@ -148,4 +150,13 @@ btnHamburger.addEventListener("click", function () {
   overlay.classList.remove("fade-out");
 
   logo.classList.toggle("fade-in");
-});
+}
+
+function closeMenu() {
+  
+}
+
+// // Direct links to page
+// headerMenuItem.forEach((item) => {
+//   item.addEventListener("click", () => menuToggle());
+// });
