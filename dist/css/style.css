@@ -1408,7 +1408,7 @@ p {
 }
 
 .faq__accordion__item__header::after {
-  content: url(.../images/icon-arrow.svg);
+  content: url(../images/icon-arrow.svg);
   width: 2.4rem;
   position: absolute;
   right: 3rem;
@@ -1419,7 +1419,7 @@ p {
 }
 
 .faq__accordion__item__header.active::after {
-  content: url(.../images/icon-arrow-red.svg);
+  content: url(../images/icon-arrow-red.svg);
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
