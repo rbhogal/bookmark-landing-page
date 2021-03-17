@@ -1080,6 +1080,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 25.875em) {
+  .features__tabs__tab-2__content {
+    padding: 0 4.375rem;
+  }
+}
+
 .features__tabs__tab-3__content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1110,6 +1116,12 @@ p {
     padding-left: 0;
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 25.875em) {
+  .features__tabs__tab-3__content {
+    padding: 0 4.375rem;
   }
 }
 

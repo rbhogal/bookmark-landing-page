@@ -312,7 +312,6 @@
 
       &--subtext {
         max-width: 65rem;
-        // height: 10rem;
       }
 
       &.active {
@@ -326,6 +325,7 @@
         text-align: center;
         padding-left: 0;
         justify-self: center;
+
       }
 
       @media only screen and (max-width: $bp-xx-small) {
@@ -357,6 +357,10 @@
         padding-left: 0;
         justify-self: center;
       }
+
+      @media only screen and (max-width: $bp-xx-small) {
+        padding: 0 4.375rem;
+      }
     }
 
     &__tab-3__content {
@@ -382,6 +386,10 @@
         text-align: center;
         padding-left: 0;
         justify-self: center;
+      }
+
+      @media only screen and (max-width: $bp-xx-small) {
+        padding: 0 4.375rem;
       }
     }
   }
