@@ -137,6 +137,7 @@ function menuToggle() {
     overlay.classList.add("fade-out");
 
     logo.classList.toggle("fade-in");
+    logo.classList.add("fade-out-logo");
 
     return;
   }
@@ -150,6 +151,7 @@ function menuToggle() {
   overlay.classList.remove("fade-out");
 
   logo.classList.toggle("fade-in");
+  logo.classList.remove("fade-out-logo");
 }
 
 function closeMenu() {

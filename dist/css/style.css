@@ -211,6 +211,7 @@ p {
   font-weight: 500;
   width: 100%;
   letter-spacing: 3px;
+  margin-top: 3.5rem;
   -webkit-box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   text-shadow: 0rem 0rem 3rem #4d4d4d;
@@ -1868,5 +1869,34 @@ p {
 .fade-out {
   -webkit-animation: fade-out 300ms ease-in-out forwards;
           animation: fade-out 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out-logo {
+  from {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-logo {
+  from {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out-logo {
+  -webkit-animation: fade-out-logo 300ms ease-in-out forwards;
+          animation: fade-out-logo 300ms ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */
