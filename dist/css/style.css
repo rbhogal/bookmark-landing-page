@@ -228,7 +228,7 @@ p {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  padding-bottom: 5.875rem;
+  padding: 5.875rem 0;
 }
 
 .header__menu--twitter {
