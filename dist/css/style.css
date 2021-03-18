@@ -838,7 +838,7 @@ p {
   font-size: 2.7rem;
 }
 
-@media only screen and (max-width: 25.875em) {
+@media only screen and (max-width: 45.3em) {
   .features__tabs__grid-container p {
     font-size: 1.8rem;
     line-height: 20px;
@@ -1041,7 +1041,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 25.875em) {
+@media only screen and (max-width: 45.3em) {
   .features__tabs__tab-1__content {
     padding: 0 4.375rem;
   }
@@ -1080,7 +1080,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 25.875em) {
+@media only screen and (max-width: 45.3em) {
   .features__tabs__tab-2__content {
     padding: 0 4.375rem;
   }
@@ -1119,7 +1119,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 25.875em) {
+@media only screen and (max-width: 45.3em) {
   .features__tabs__tab-3__content {
     padding: 0 4.375rem;
   }
