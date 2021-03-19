@@ -603,7 +603,6 @@ p {
 
 .features__tabs {
   height: 10rem;
-  margin: 0 auto;
   margin-top: 5.625rem;
   padding: 0 4rem;
   display: -ms-grid;
@@ -1057,7 +1056,7 @@ p {
       -ms-flex-pack: start;
           justify-content: start;
   padding-top: 16.3rem;
-  padding-left: 16.5rem;
+  padding-left: 17.5%;
   visibility: hidden;
 }
 
@@ -1096,7 +1095,7 @@ p {
       -ms-flex-pack: start;
           justify-content: start;
   padding-top: 16.3rem;
-  padding-left: 16.5rem;
+  padding-left: 17.5%;
   visibility: hidden;
 }
 
