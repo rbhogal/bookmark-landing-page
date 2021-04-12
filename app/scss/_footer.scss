@@ -35,7 +35,7 @@
           border-color: $soft-red;
         }
 
-        & i.fa-exclamation-circle {
+        .fa-exclamation-circle {
           visibility: visible;
         }
 
@@ -44,7 +44,7 @@
         }
       }
 
-      & i {
+      .fa-exclamation-circle {
         visibility: hidden;
         position: absolute;
         top: 1.5rem;
