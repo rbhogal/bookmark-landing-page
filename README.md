@@ -6,7 +6,7 @@
 <h3 align="center">Bookmark</h3>
 
   <p align="center">
-    Chrome Extension Landing Page / Frontend mentor challenge
+    Chrome Extension Landing Page / Frontend Mentor challenge
     <br />
     <br />
     <a href="https://rbhogal.github.io/bookmark-landing-page/dist/">View Site</a>
