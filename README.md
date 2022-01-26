@@ -24,7 +24,6 @@
 
 </div>
 <br />
-<br />
 
 Translated JPEG design files for mobile & desktop layouts into a fully responsive pixel-perfect website with form validation using regex and tabbed features section and FAQ accordion using Javascript as part of the [Frontend Mentor challenge](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158).
 
