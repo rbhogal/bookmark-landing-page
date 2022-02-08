@@ -42,4 +42,4 @@ Translated JPEG design files for mobile & desktop layouts into a fully responsiv
 
 #### Making it Responsive
 
-I set hard heights and widths which caused horizontal scroll bars when making it responsive. See my commit history [here](https://github.com/rbhogal/bookmark-landing-page/commit/bbf16a8eac7af0f3836c6f407ba98450c04028a8#diff-b3b145d502f30859c28e06006a2b44428dd62a3fe4fc5b9db66c319a75eab732L325), notice how to fix my mistake for this subtext container, I set a max-width instead of width and god rid of the height. 
+I set hard heights and widths which caused horizontal scroll bars when making it responsive. See my commit history [here](https://github.com/rbhogal/bookmark-landing-page/commit/bbf16a8eac7af0f3836c6f407ba98450c04028a8#diff-b3b145d502f30859c28e06006a2b44428dd62a3fe4fc5b9db66c319a75eab732L325), notice how to fix my mistake for this subtext container, I set a max-width instead of width and got rid of the height. 
